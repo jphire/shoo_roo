@@ -1,0 +1,9 @@
+<aspectj>
+<aspects>
+<aspect name="com.shoo.domain.UserDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.shoo.domain.UserIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.shoo.domain.UserIntegrationTest_Roo_Configurable"/>
+<aspect name="com.shoo.domain.UserDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

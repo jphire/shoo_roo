@@ -1,0 +1,46 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 12:52:33
+project --topLevelPackage com.shoo --projectName shoo --java 6 --packaging JAR
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-17 12:52:35
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 12:55:18
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-17 12:56:45
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 12:56:56
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 12:58:05
+entity jpa --class ~.domain.User --table users --permitReservedWords 
+field string username --notNull
+field string password --notNull
+entity jpa --class ~.domain.Role --table roles --permitReservedWords
+field string rolename --notNull
+field set users --type ~.domain.User
+field set --class ~.domain.User --fieldName roles --type ~.domain.Role
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-17 13:00:22
+// [failed] test integration
+test integration --permitReservedWords 
+perform tests
+web mvc setup
+web mvc all --package ~.web
+security setup
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 13:30:35
+help
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-17 13:43:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 13:43:12
+selenium test --controller ~.web.UserController
+selenium test --controller ~.web.RoleController
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-17 15:32:23
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 16:43:37
+finder list --class ~.domain.User
+finder add --finderName findUsersByUsernameEquals
+finder list --class ~.domain.User
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-17 16:54:06
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-17 18:39:14
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-17 21:02:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-18 02:27:12
+perform package
+perform package
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-18 02:29:55
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-18 02:39:17

@@ -1,0 +1,202 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+    <table xmlns="http://www.w3.org/1999/xhtml">
+        <tr class="title status_passed">
+            <td>
+                    <b>Suite Of Tests</b>
+                </td>
+        </tr>
+    <tr class="  status_passed">
+                <td>
+                    <a href="#testresult0">Selenium test for UserController</a>
+                </td>
+            </tr>
+        <tr class="  status_passed">
+                <td>
+                    <a href="#testresult1">Selenium test for RoleController</a>
+                </td>
+            </tr>
+        </table>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">http://localhost:8080/shoo/resources/selenium/test-user.xhtml</a><br/><div xmlns="http://www.w3.org/1999/xhtml">
+    <table border="1" cellspacing="1" cellpadding="1" xmlns="http://www.w3.org/1999/xhtml">
+        <thead>
+            <tr class="title status_passed">
+                <td colspan="3" rowspan="1">Selenium test for UserController</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr style="cursor: pointer;" class="  status_done">
+                    <td>open</td>
+                    <td>http://localhost:8080/shoo/users?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_done">
+                    <td>type</td>
+                    <td>_username_id</td>
+                    <td>someUsername1</td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_done">
+                    <td>type</td>
+                    <td>_password_id</td>
+                    <td>somePassword1</td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_done">
+                    <td>clickAndWait</td>
+                    <td>//input[@id = 'proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_passed">
+                    <td>verifyText</td>
+                    <td>_s_com_shoo_domain_User_username_username_id</td>
+                    <td>someUsername1</td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_passed">
+                    <td>verifyText</td>
+                    <td>_s_com_shoo_domain_User_password_password_id</td>
+                    <td>somePassword1</td>
+                </tr>
+            </tbody>
+    </table>
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">http://localhost:8080/shoo/resources/selenium/test-role.xhtml</a><br/><div xmlns="http://www.w3.org/1999/xhtml">
+    <table border="1" cellspacing="1" cellpadding="1" xmlns="http://www.w3.org/1999/xhtml">
+        <thead>
+            <tr class="title status_passed">
+                <td colspan="3" rowspan="1">Selenium test for RoleController</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr style="cursor: pointer;" class="  status_done">
+                    <td>open</td>
+                    <td>http://localhost:8080/shoo/roles?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_done">
+                    <td>type</td>
+                    <td>_rolename_id</td>
+                    <td>someRolename1</td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_done">
+                    <td>clickAndWait</td>
+                    <td>//input[@id = 'proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr style="cursor: pointer;" class="  status_passed">
+                    <td>verifyText</td>
+                    <td>_s_com_shoo_domain_Role_rolename_rolename_id</td>
+                    <td>someRolename1</td>
+                </tr>
+            </tbody>
+    </table>
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /shoo/resources/selenium/test-user.xhtml
+info: Executing: |open | http://localhost:8080/shoo/users?form&amp;lang=en_US |  |
+info: Executing: |type | _username_id | someUsername1 |
+info: Executing: |type | _password_id | somePassword1 |
+info: Executing: |clickAndWait | //input[@id = &apos;proceed&apos;] |  |
+info: Executing: |verifyText | _s_com_shoo_domain_User_username_username_id | someUsername1 |
+info: Executing: |verifyText | _s_com_shoo_domain_User_password_password_id | somePassword1 |
+info: Starting test /shoo/resources/selenium/test-role.xhtml
+info: Executing: |open | http://localhost:8080/shoo/roles?form&amp;lang=en_US |  |
+info: Executing: |type | _rolename_id | someRolename1 |
+info: Executing: |clickAndWait | //input[@id = &apos;proceed&apos;] |  |
+info: Executing: |verifyText | _s_com_shoo_domain_Role_rolename_rolename_id | someRolename1 |
+</pre></body></html>

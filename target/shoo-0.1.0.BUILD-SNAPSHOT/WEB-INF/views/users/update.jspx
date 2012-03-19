@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_shoo_domain_User" modelAttribute="user" path="/users" versionField="Version" z="zPnrqlnn12OP/rgTg8pTRHGVFjw=">
+        <field:input field="username" id="c_com_shoo_domain_User_username" required="true" z="UNmGlKRlVcqWVUzDMOtCZD7I4ac="/>
+        <field:input field="password" id="c_com_shoo_domain_User_password" required="true" z="7Q85Zi0mXtFm/PHgdJMnXOBiSTw="/>
+        <field:select field="roles" id="c_com_shoo_domain_User_roles" itemValue="id" items="${roles}" multiple="true" path="/roles" z="X5ZasfZe2VCSXKkkhxN5a9G5dGM="/>
+    </form:update>
+</div>
